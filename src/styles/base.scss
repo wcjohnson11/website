@@ -7,7 +7,7 @@ body {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   /*space*/
-  font-size: 1.2em;
+  font-size: 1em;
   color: $text-over-dark;
   background: $bg-dark;
 }
@@ -27,3 +27,19 @@ body {
 
 /*BULMA CUSTOMIZATION*/
 @import './_overrides.scss';
+
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
